@@ -1,0 +1,5 @@
+INDEX VERSION 1.134
+A:\Advanced_Java_By_Sai_Sir\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3358540654.index
+\E_Shopping_By_Using_Servlets_And_JDBC\src\main\java
+A:\Advanced_Java_By_Sai_Sir\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3272129491.index
+\E_Shopping_By_Using_Servlets_And_JDBC\src\main\resources

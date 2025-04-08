@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Operations</title>
+<style>
+    /* Body styling */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f0f4f8; /* Light gray background for a clean look */
+        height: 100vh; /* Full screen height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Container styling */
+    #container {
+        width: 100%;
+        max-width: 500px; /* Maximum width for container */
+        padding: 30px;
+        background-color: #ffffff; /* White background for content */
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        box-sizing: border-box; /* Ensures padding is inside the width */
+    }
+
+    /* Title styling */
+    h1 {
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 25px;
+        font-weight: 600;
+    }
+
+    /* Link styling */
+    a {
+        display: block;
+        font-size: 18px;
+        color: #fff;
+        text-decoration: none;
+        margin: 15px 0;
+        padding: 14px;
+        border-radius: 8px;
+        background-color: #007BFF; /* Blue background */
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* Link hover effect */
+    a:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+        color: #fff;
+        cursor: pointer;
+    }
+
+    /* Responsive Design: Auto-center the content */
+    @media (max-width: 600px) {
+        #container {
+            width: 90%;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        a {
+            font-size: 16px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div id="container">
+    <h1>Admin Operations</h1>
+    <a href="AddProducts.html">Add Products</a>
+    <a href="AllProductsDetails.jsp">Get All Products Details</a>
+    <a href="GetOrderDetails.jsp">Get Order Details</a>
+</div>
+
+</body>
+</html>

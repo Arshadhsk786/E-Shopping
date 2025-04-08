@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Customer Login</title>
+<style type="text/css">
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #121212; /* Dark background color */
+        color: #fff; /* White text for better contrast */
+    }
+
+    #reg {
+        width: 500px;
+        margin: 5% auto;
+        padding: 30px;
+        border: 1px solid #444;
+        border-radius: 12px;
+        background-color: #1E1E1E; /* Darker background for form */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    #Title {
+        font-size: 36px;
+        text-align: center;
+        color: #FFD700; /* Gold color for the title */
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    #Title:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    input[type="text"], input[type="password"] {
+        font-size: 16px;
+        width: 100%;
+        padding: 12px;
+        margin-top: 8px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        border: 1px solid #444;
+        border-radius: 8px;
+        background-color: #333;
+        color: #fff;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    input[type="text"]:focus, input[type="password"]:focus {
+        border-color: #FFD700; /* Focus border color changes to gold */
+        outline: none;
+    }
+
+    #button, #button2 {
+        width: 100%;
+        padding: 14px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+
+    #button {
+        background-color: #FFD700; /* Gold background for button */
+        color: #333; /* Dark text for contrast */
+        transition: background-color 0.3s ease;
+    }
+
+    #button:hover {
+        background-color: #ffcc00; /* Slightly lighter gold on hover */
+    }
+
+    #button2 {
+        background-color: #444; /* Dark background for secondary button */
+        color: #FFD700; /* Gold text for contrast */
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+    #button2:hover {
+        background-color: #555; /* Slightly lighter dark background on hover */
+    }
+
+    div {
+        margin-bottom: 15px;
+    }
+
+    label.names {
+        font-size: 16px;
+        color: #FFD700; /* Gold color for labels */
+        font-weight: bold;
+    }
+</style>
+<script type="text/javascript">
+    function RigistorPage() {
+        window.location.href = "EmployeeRegistration.html";
+    }
+</script>
+</head>
+<body>
+    <form id="reg" action="customerLogin">
+        <h1 id="Title">Customer Login</h1>
+        <div>
+            <label class="names">Email Id</label>
+            <input type="text" placeholder="Enter Your Email Id" name="customerDetail" required>
+        </div>
+        <div>
+            <label class="names">Password</label>
+            <input type="password" placeholder="Enter Password" name="customerPass" required>
+        </div>
+        <input id="button" type="submit" value="Login">
+        <input id="button2" type="button" value="Don't have an account?" onclick="window.location.href='CustomerRegistration.html'">
+    </form>
+</body>
+</html>

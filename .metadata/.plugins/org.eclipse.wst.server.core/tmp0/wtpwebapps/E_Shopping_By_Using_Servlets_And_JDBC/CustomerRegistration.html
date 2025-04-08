@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Registration</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #121212; /* Black background */
+        color: #FFD700; /* Gold text color */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 500px;
+        background-color: #1E1E1E; /* Dark gray background for card */
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        margin: 15px;
+        border: 1px solid #444; /* Subtle border for contrast */
+    }
+
+    .card h1 {
+        font-size: 28px;
+        margin: 0 0 20px;
+        color: #FFD700; /* Gold color for the title */
+        text-align: center;
+    }
+
+    .card h1:hover {
+        color: #ffcc00; /* Slightly lighter gold on hover */
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+        color: #FFD700; /* Gold color for labels */
+        display: block;
+        margin-bottom: 6px;
+        font-weight: bold;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        color: #FFD700; /* Gold text color */
+        background-color: #333; /* Dark input background */
+        border: 1px solid #444;
+        border-radius: 8px;
+        outline: none;
+        box-sizing: border-box;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .form-group input:focus {
+        border-color: #FFD700; /* Focus border color changes to gold */
+        box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+    }
+
+    .form-group input[type="submit"] {
+        background-color: #FFD700; /* Gold background for button */
+        color: #1E1E1E; /* Dark text for contrast */
+        border: none;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 12px;
+        border-radius: 25px;
+        transition: background-color 0.3s ease-in-out;
+        margin-top: 10px;
+    }
+
+    .form-group input[type="submit"]:hover {
+        background-color: #ffcc00; /* Slightly lighter gold on hover */
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+        .card {
+        	margin-top:-33%;
+            padding: 15px;
+        }
+
+        .card h1 {
+            font-size: 24px;
+        }
+
+        .form-group input {
+            font-size: 14px;
+            padding: 10px;
+        }
+
+        .form-group input[type="submit"] {
+            font-size: 16px;
+            padding: 10px;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="card">
+    <h1>Customer Registration</h1>
+    <form action="customer_registration">
+        <div class="form-group">
+            <label for="CustomerName">Name</label>
+            <input type="text" id="CustomerName" name="CustomerName" placeholder="Enter Your Name" required>
+        </div>
+        <div class="form-group">
+            <label for="CustomerEmlid">Email Id</label>
+            <input type="email" id="CustomerEmlid" name="CustomerEmlid" placeholder="Enter Your Email Id" required>
+        </div>
+        <div class="form-group">
+            <label for="CustomerMblnum">Mobile</label>
+            <input type="tel" id="CustomerMblnum" name="CustomerMblnum" placeholder="Enter Your Mobile Number" required>
+        </div>
+        <div class="form-group">
+            <label for="CustomerPassword">Password</label>
+            <input type="password" id="CustomerPassword" name="CustomerPassword" placeholder="Enter Your Password" required>
+        </div>
+        <div class="form-group">
+            <label for="CustomerGender">Gender</label>
+            <input type="text" id="CustomerGender" name="CustomerGender" placeholder="Enter Your Gender" required>
+        </div>
+        <div class="form-group">
+            <label for="CustomerAddress">Address</label>
+            <input type="text" id="CustomerAddress" name="CustomerAddress" placeholder="Enter Your Address" required>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Register">
+        </div>
+    </form>
+</div>
+</body>
+</html>

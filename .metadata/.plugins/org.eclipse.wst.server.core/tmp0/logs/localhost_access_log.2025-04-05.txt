@@ -1,0 +1,5 @@
+127.0.0.1 - - [05/Apr/2025:09:34:29 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [05/Apr/2025:09:35:07 +0530] "GET /E_Shopping_By_Using_Servlets_And_JDBC/AdminLogin.html HTTP/1.1" 200 2747
+0:0:0:0:0:0:0:1 - - [05/Apr/2025:09:35:07 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [05/Apr/2025:09:35:33 +0530] "GET /E_Shopping_By_Using_Servlets_And_JDBC/adminLogin?adminEmail=arshadh&adminPass=12344 HTTP/1.1" 200 2797
+0:0:0:0:0:0:0:1 - - [05/Apr/2025:09:35:50 +0530] "GET /E_Shopping_By_Using_Servlets_And_JDBC/adminLogin?adminEmail=arshadh&adminPass=arshadh HTTP/1.1" 200 2797
